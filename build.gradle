@@ -1,0 +1,25 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    repositories {
+        maven {
+            url "http://m2repo.onepluscorp.cn:8081/nexus/content/repositories/jcenter"
+        }
+        maven {
+            url "http://m2repo.onepluscorp.cn:8081/nexus/content/repositories/maven_google_com"
+        }
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.0.0'
+    }
+}
+
+allprojects {
+    repositories {
+        maven {
+            url "http://m2repo.onepluscorp.cn:8081/nexus/content/repositories/jcenter"
+        }
+        maven {
+            url "http://m2repo.onepluscorp.cn:8081/nexus/content/repositories/maven_google_com"
+        }
+    }
+}
